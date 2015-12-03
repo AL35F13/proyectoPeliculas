@@ -2,6 +2,7 @@
 $(document).ready(function(e) {
 document.addEventListener("deviceready",function(){
 	$("#btnTodo").on('tap', function(){
+		alert("dentro");
 		  $.ajax({
 			  type: "POST",
 			  url: "http://192.168.1.165/proyecto/buscartodas.php",
