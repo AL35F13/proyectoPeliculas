@@ -10,7 +10,7 @@ document.addEventListener("deviceready",function(){
 			  error: function(){
 				  alert("No se puede conectar al servidor");},
 		      success: function(respuesta){var producto =JSON.parse(respuesta);
-			   alert (respuesta);
+			   alert (producto.peliculas.length);
 			   $('#contenido').empty();
 			   for(var $x=0; $x<producto.peliculas.length;$x++)
 			   
