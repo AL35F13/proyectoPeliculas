@@ -11,9 +11,9 @@ document.addEventListener("deviceready",function(){
 				  },
 		      success: function(respuesta)
 			  {
-				  
+				   alert("a->"+respuesta+"<-");
 				  var producto =JSON.parse(respuesta);
-				  alert("L:"+producto.peliculas.length);
+				  alert(respuesta);
 				  alert(producto.peliculas[0].nombrePelicula);
 			   
 				}
