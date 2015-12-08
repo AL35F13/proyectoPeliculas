@@ -34,7 +34,7 @@ document.addEventListener("deviceready",function(){
 		 $.ajax({
 			  type: "POST",
 			  url: "http://192.168.1.127/proyecto/BusquedaNombre.php",
-			  data: "nombrePelicula=" + $('#txtnombrePelicula').val(),
+			  data: "nombrePeli=" + $('#txtnombrePelicula').val(),
 			  error: function(){
 				  alert("No se puede conectar al servidor");
 				  },
