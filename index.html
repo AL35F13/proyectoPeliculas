@@ -33,8 +33,7 @@
    <div align="center">
     <div  style="width:50%" data-role="controlgroup" data-type="vertical">
     <a href="#" id="btnTodo" class="ui-btn ui-icon-grid ui-btn-icon-right ui-shadow-icon ui-btn-corner-all">Todas</a>
-    <a href="#" id="btnGenero" class="ui-btn ui-icon-bullets  ui-btn-icon-right ui-shadow-icon ui-btn-corner-all">Por Género</a>
-    <a href="#" id="btnNombre" class="ui-btn ui-icon-video ui-btn-icon-right ui-shadow-icon ui-btn-corner-all">Por Nombre</a>
+    <a href="#BusquedaNombre" id="btnNombre" class="ui-btn ui-icon-bullets  ui-btn-icon-right ui-shadow-icon ui-btn-corner-all">Por Nombre</a>
     </div>
    </div> 
   </div>
@@ -64,6 +63,47 @@
   </div>
  </div>  
  <!-- /Todas -->
+ 
+ <!-- BusquedaNombre -->
+ <div data-role="page" id="BusquedaNombre" >   
+  <div data-role="header">
+    <h1>Busqueda de pelicula por nombre:</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <div align="center">
+    <div style="width:40%">
+     <input type="text" id="txtnombrePelicula" placeholder="Nombre">
+    </div>
+    <a href="#" id="btnbuscar" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-shadow-icon ui-btn-corner-all ui-btn-inline">Buscar</a>
+   </div>
+  </div>
+
+  <div data-role="footer" style="clear:both">
+    <h1>@Anahí Ramos Martínez</h1>
+    <h1>@Nancy Esmeralda Soriano Nieto</h1>
+  </div>
+ </div>  
+ <!-- /BusquedaNombre -->
+
+<!-- ResultadoNombre -->
+ <div data-role="page" id="ResultadoNombre" >   
+  <div data-role="header">
+    <h1>Resultado</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <div id="contenidoNombre">
+      
+    </div>
+  </div>
+
+  <div data-role="footer" style="clear:both">
+    <h1>@Anahí Ramos Martínez</h1>
+    <h1>@Nancy Esmeralda Soriano Nieto</h1>
+  </div>
+ </div>  
+ <!-- /ResultadoNombre -->
 
  </body>
 </html> 
